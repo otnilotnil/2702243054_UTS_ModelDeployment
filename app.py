@@ -16,7 +16,6 @@ model, encoders, features = load_model()
 
 st.title("XGBoost Model Predicting Hotel Booking Status")
 
-# 2. Build input form based on features used
 user_input = {}
 
 user_input['lead_time'] = st.number_input("Lead Time", 0, 450, 100)
