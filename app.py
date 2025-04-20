@@ -14,7 +14,7 @@ def load_model():
 
 model, encoders, features = load_model()
 
-st.title("🏨 Hotel Booking Prediction App")
+st.title("XGBoost Model Predicting Hotel Booking Status")
 
 # 2. Build input form based on features used
 user_input = {}
