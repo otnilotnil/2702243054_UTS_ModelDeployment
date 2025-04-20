@@ -25,7 +25,7 @@ user_input['no_of_special_requests'] = st.slider("Special Requests", 0, 5, 1)
 
 user_input['arrival_year'] = st.selectbox("Arrival Year", [2017, 2018])
 
-user_input['avg_price_per_room'] = st.number_input("Average Price per Room", 0, 550, 100)
+user_input['avg_price_per_room'] = st.number_input("Average Price per Room", 0.0, 550.0, 100.0)
 
 market_options = encoders['market_segment_type'].classes_.tolist()
 selected_market = st.selectbox("Market Segment Type", market_options)
