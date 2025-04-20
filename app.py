@@ -4,11 +4,11 @@ import numpy as np
 
 @st.cache_resource
 def load_model():
-    with open('NO3_2702243054/finalXGBModel.pkl', 'rb') as f:
+    with open('finalXGBModel.pkl', 'rb') as f:
         model = pickle.load(f)
-    with open('NO3_2702243054/labelEncoders.pkl', 'rb') as f:
+    with open('labelEncoders.pkl', 'rb') as f:
         encoders = pickle.load(f)
-    with open('NO3_2702243054/topFeatureNames.pkl', 'rb') as f:
+    with open('topFeatureNames.pkl', 'rb') as f:
         features = pickle.load(f)
     return model, encoders, features
 
