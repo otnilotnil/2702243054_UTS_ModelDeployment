@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-import xgboost
+
 @st.cache_resource
 def load_model():
     with open('finalXGBModel.pkl', 'rb') as f:
